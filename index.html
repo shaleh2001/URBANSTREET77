@@ -1,0 +1,1209 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <title>URBAN STREET77</title>
+
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+
+<body>
+
+
+<!-- ================= HEADER ================= -->
+
+<header>
+
+    <div class="logo">
+        URBAN<span>STREET77</span>
+    </div>
+
+
+    <nav>
+
+        <a href="#home">HOME</a>
+
+        <a href="#produk">SHOP</a>
+
+        <a href="#kategori">CATEGORY</a>
+
+        <a href="#tentang">ABOUT</a>
+
+        <a href="#kontak">CONTACT</a>
+
+    </nav>
+
+
+    <button class="cart-button"
+            onclick="openCart()">
+
+        🛒
+
+        <span id="cart-count">
+            0
+        </span>
+
+    </button>
+
+</header>
+
+
+
+<!-- ================= HERO ================= -->
+
+<section id="home"
+         class="hero">
+
+    <div class="hero-content">
+
+        <p class="small-title">
+            NEW COLLECTION 2026
+        </p>
+
+
+        <h1>
+
+            FROM STREET
+            <br>
+
+            <span>
+                TO LIFESTYLE
+            </span>
+
+        </h1>
+
+
+        <p>
+
+            Koleksi fashion urbana_street77
+            terbaru untuk kamu yang
+            ingin tampil berbeda.
+
+        </p>
+
+
+        <a href="#produk"
+           class="hero-button">
+
+            BELANJA SEKARANG
+
+        </a>
+
+    </div>
+
+</section>
+
+
+
+<!-- ================= CATEGORY ================= -->
+
+<section id="kategori"
+         class="categories">
+
+    <h2>
+        SHOP BY CATEGORY
+    </h2>
+
+
+    <div class="category-container">
+
+        <button onclick="filterProduct('all')">
+            ALL
+        </button>
+
+
+        <button onclick="filterProduct('tshirt')">
+            T-SHIRT
+        </button>
+
+
+        <button onclick="filterProduct('jacket')">
+            JACKET
+        </button>
+
+
+        <button onclick="filterProduct('sweater')">
+            SWEATER
+        </button>
+
+
+        <button onclick="filterProduct('hoodie')">
+            HOODIE
+        </button>
+
+
+        <button onclick="filterProduct('jeans')">
+            JEANS
+        </button>
+
+
+        <button onclick="filterProduct('shoes')">
+            SHOES
+        </button>
+
+    </div>
+
+</section>
+
+
+
+<!-- ================= PRODUCTS ================= -->
+
+<section id="produk"
+         class="products-section">
+
+
+    <div class="section-title">
+
+        <p>
+            OUR COLLECTION
+        </p>
+
+        <h2>
+            BEST SELLER
+        </h2>
+
+    </div>
+
+
+
+    <div class="products"
+         id="product-container">
+
+
+
+<!-- ================================================= -->
+<!-- 1 KAOS -->
+<!-- ================================================= -->
+
+<div class="product-card"
+     data-category="tshirt">
+
+    <div class="product-image">
+
+        <span class="sale">
+            NEW
+        </span>
+
+        <img
+        src="https://images.pexels.com/photos/8410773/pexels-photo-8410773.jpeg?auto=compress&cs=tinysrgb&w=800">
+
+    </div>
+
+
+    <div class="product-info">
+
+        <p>
+            T-SHIRT
+        </p>
+
+        <h3>
+            Urban Black T-Shirt
+        </h3>
+
+        <strong>
+            Rp259.000
+        </strong>
+
+
+        <button
+        onclick="addCart('Urban Black T-Shirt',259000)">
+
+            TAMBAH KE KERANJANG
+
+        </button>
+
+    </div>
+
+</div>
+
+
+
+<!-- 2 -->
+
+<div class="product-card"
+     data-category="tshirt">
+
+    <div class="product-image">
+
+        <img
+        src="https://images.pexels.com/photos/8532616/pexels-photo-8532616.jpeg?auto=compress&cs=tinysrgb&w=800">
+
+    </div>
+
+
+    <div class="product-info">
+
+        <p>
+            T-SHIRT
+        </p>
+
+        <h3>
+            Oversize White Tee
+        </h3>
+
+        <strong>
+            Rp229.000
+        </strong>
+
+
+        <button
+        onclick="addCart('Oversize White Tee',229000)">
+
+            TAMBAH KE KERANJANG
+
+        </button>
+
+    </div>
+
+</div>
+
+
+
+<!-- 3 -->
+
+<div class="product-card"
+     data-category="tshirt">
+
+    <div class="product-image">
+
+        <img
+        src="https://images.pexels.com/photos/769730/pexels-photo-769730.jpeg?auto=compress&cs=tinysrgb&w=800">
+
+    </div>
+
+
+    <div class="product-info">
+
+        <p>
+            T-SHIRT
+        </p>
+
+        <h3>
+            Basic Street Tee
+        </h3>
+
+        <strong>
+            Rp199.000
+        </strong>
+
+
+        <button
+        onclick="addCart('Basic Street Tee',199000)">
+
+            TAMBAH KE KERANJANG
+
+        </button>
+
+    </div>
+
+</div>
+
+
+
+<!-- 4 -->
+
+<div class="product-card"
+     data-category="tshirt">
+
+    <div class="product-image">
+
+        <img
+        src="https://images.pexels.com/photos/1656684/pexels-photo-1656684.jpeg?auto=compress&cs=tinysrgb&w=800">
+
+    </div>
+
+
+    <div class="product-info">
+
+        <p>
+            T-SHIRT
+        </p>
+
+        <h3>
+            Street Graphic Tee
+        </h3>
+
+        <strong>
+            Rp279.000
+        </strong>
+
+
+        <button
+        onclick="addCart('Street Graphic Tee',279000)">
+
+            TAMBAH KE KERANJANG
+
+        </button>
+
+    </div>
+
+</div>
+
+
+
+<!-- ================================================= -->
+<!-- 5 JAKET -->
+<!-- ================================================= -->
+
+<div class="product-card"
+     data-category="jacket">
+
+    <div class="product-image">
+
+        <span class="sale">
+            NEW
+        </span>
+
+        <img
+        src="https://images.pexels.com/photos/37770971/pexels-photo-37770971.jpeg?auto=compress&cs=tinysrgb&w=800">
+
+    </div>
+
+
+    <div class="product-info">
+
+        <p>
+            JACKET
+        </p>
+
+        <h3>
+            Street Black Jacket
+        </h3>
+
+        <strong>
+            Rp359.000
+        </strong>
+
+
+        <button
+        onclick="addCart('Street Black Jacket',359000)">
+
+            TAMBAH KE KERANJANG
+
+        </button>
+
+    </div>
+
+</div>
+
+
+
+<!-- 6 -->
+
+<div class="product-card"
+     data-category="jacket">
+
+    <div class="product-image">
+
+        <img
+        src="https://images.pexels.com/photos/1040945/pexels-photo-1040945.jpeg?auto=compress&cs=tinysrgb&w=800">
+
+    </div>
+
+
+    <div class="product-info">
+
+        <p>
+            JACKET
+        </p>
+
+        <h3>
+            Classic Denim Jacket
+        </h3>
+
+        <strong>
+            Rp429.000
+        </strong>
+
+
+        <button
+        onclick="addCart('Classic Denim Jacket',429000)">
+
+            TAMBAH KE KERANJANG
+
+        </button>
+
+    </div>
+
+</div>
+
+
+
+<!-- 7 -->
+
+<div class="product-card"
+     data-category="jacket">
+
+    <div class="product-image">
+
+        <img
+        src="images 12-22-29-684/idgoods_39_491292_3x4.jpg.avif"alt="urban bomber jacket">
+
+    </div>
+
+
+
+    <div class="product-info">
+
+        <p>
+            JACKET
+        </p>
+
+        <h3>
+            Urban Bomber Jacket
+        </h3>
+
+        <strong>
+            Rp499.000
+        </strong>
+
+
+        <button
+        onclick="addCart('Urban Bomber Jacket',499000)">
+
+            TAMBAH KE KERANJANG
+
+        </button>
+
+    </div>
+
+</div>
+
+
+
+<!-- 8 -->
+
+<div class="product-card"
+     data-category="jacket">
+
+    <div class="product-image">
+
+        <img
+        src="https://images.pexels.com/photos/1124465/pexels-photo-1124465.jpeg?auto=compress&cs=tinysrgb&w=800">
+
+    </div>
+
+
+    <div class="product-info">
+
+        <p>
+            JACKET
+        </p>
+
+        <h3>
+            Racing Jacket
+        </h3>
+
+        <strong>
+            Rp559.000
+        </strong>
+
+
+        <button
+        onclick="addCart('Racing Jacket',559000)">
+
+            TAMBAH KE KERANJANG
+
+        </button>
+
+    </div>
+
+</div>
+
+
+
+<!-- ================================================= -->
+<!-- 9 SWEATER -->
+<!-- ================================================= -->
+
+<div class="product-card"
+     data-category="sweater">
+
+    <div class="product-image">
+
+        <img
+        src="https://images.pexels.com/photos/1183266/pexels-photo-1183266.jpeg?auto=compress&cs=tinysrgb&w=800">
+
+    </div>
+
+
+    <div class="product-info">
+
+        <p>
+            SWEATER
+        </p>
+
+        <h3>
+            Essential Grey Sweater
+        </h3>
+
+        <strong>
+            Rp299.000
+        </strong>
+
+
+        <button
+        onclick="addCart('Essential Grey Sweater',299000)">
+
+            TAMBAH KE KERANJANG
+
+        </button>
+
+    </div>
+
+</div>
+
+
+
+<!-- 10 -->
+
+<div class="product-card"
+     data-category="sweater">
+
+    <div class="product-image">
+
+        <img
+        src="https://images.pexels.com/photos/6311392/pexels-photo-6311392.jpeg?auto=compress&cs=tinysrgb&w=800">
+
+    </div>
+
+
+    <div class="product-info">
+
+        <p>
+            SWEATER
+        </p>
+
+        <h3>
+            Cream Street Sweater
+        </h3>
+
+        <strong>
+            Rp319.000
+        </strong>
+
+
+        <button
+        onclick="addCart('Cream Street Sweater',319000)">
+
+            TAMBAH KE KERANJANG
+
+        </button>
+
+    </div>
+
+</div>
+
+
+
+<!-- 11 -->
+
+<div class="product-card"
+     data-category="sweater">
+
+    <div class="product-image">
+
+        <img
+        src="images 12-22-29-684/4msw9137-02_1.jpg.webp" alt="black premium sweater">
+        
+
+    </div>
+
+
+    <div class="product-info">
+
+        <p>
+            SWEATER
+        </p>
+
+        <h3>
+            Black Premium Sweater
+        </h3>
+
+        <strong>
+            Rp349.000
+        </strong>
+
+
+        <button
+        onclick="addCart('Black Premium Sweater',349000)">
+
+            TAMBAH KE KERANJANG
+
+        </button>
+
+    </div>
+
+</div>
+
+
+
+<!-- ================================================= -->
+<!-- 12 HOODIE -->
+<!-- ================================================= -->
+
+<div class="product-card"
+     data-category="hoodie">
+
+    <div class="product-image">
+
+        <span class="sale">
+            SALE
+        </span>
+
+        <img
+        src="https://images.pexels.com/photos/8532616/pexels-photo-8532616.jpeg?auto=compress&cs=tinysrgb&w=800">
+
+    </div>
+
+
+    <div class="product-info">
+
+        <p>
+            HOODIE
+        </p>
+
+        <h3>
+            Oversize Black Hoodie
+        </h3>
+
+        <strong>
+            Rp259.000
+        </strong>
+
+
+        <button
+        onclick="addCart('Oversize Black Hoodie',259000)">
+
+            TAMBAH KE KERANJANG
+
+        </button>
+
+    </div>
+
+</div>
+
+
+
+<!-- 13 -->
+
+<div class="product-card"
+     data-category="hoodie">
+
+    <div class="product-image">
+
+        <img
+        src="https://images.pexels.com/photos/1043474/pexels-photo-1043474.jpeg?auto=compress&cs=tinysrgb&w=800">
+
+    </div>
+
+
+    <div class="product-info">
+
+        <p>
+            HOODIE
+        </p>
+
+        <h3>
+            Grey Essential Hoodie
+        </h3>
+
+        <strong>
+            Rp329.000
+        </strong>
+
+
+        <button
+        onclick="addCart('Grey Essential Hoodie',329000)">
+
+            TAMBAH KE KERANJANG
+
+        </button>
+
+    </div>
+
+</div>
+
+
+
+<!-- 14 -->
+
+<div class="product-card"
+     data-category="hoodie">
+
+    <div class="product-image">
+
+        <img
+        src="https://images.pexels.com/photos/532220/pexels-photo-532220.jpeg?auto=compress&cs=tinysrgb&w=800">
+
+    </div>
+
+
+    <div class="product-info">
+
+        <p>
+            HOODIE
+        </p>
+
+        <h3>
+            Street Brown Hoodie
+        </h3>
+
+        <strong>
+            Rp349.000
+        </strong>
+
+
+        <button
+        onclick="addCart('Street Brown Hoodie',349000)">
+
+            TAMBAH KE KERANJANG
+
+        </button>
+
+    </div>
+
+</div>
+
+
+
+<!-- ================================================= -->
+<!-- 15 JEANS -->
+<!-- ================================================= -->
+
+<div class="product-card"
+     data-category="jeans">
+
+    <div class="product-image">
+
+        <img
+        src="https://images.pexels.com/photos/52518/jeans-pants-blue-shop-52518.jpeg?auto=compress&cs=tinysrgb&w=800">
+
+    </div>
+
+
+    <div class="product-info">
+
+        <p>
+            JEANS
+        </p>
+
+        <h3>
+            Classic Blue Jeans
+        </h3>
+
+        <strong>
+            Rp399.000
+        </strong>
+
+
+        <button
+        onclick="addCart('Classic Blue Jeans',399000)">
+
+            TAMBAH KE KERANJANG
+
+        </button>
+
+    </div>
+
+</div>
+
+
+
+<!-- 16 -->
+
+<div class="product-card"
+     data-category="jeans">
+
+    <div class="product-image">
+
+        <img
+        src="https://images.pexels.com/photos/1082529/pexels-photo-1082529.jpeg?auto=compress&cs=tinysrgb&w=800">
+
+    </div>
+
+
+    <div class="product-info">
+
+        <p>
+            JEANS
+        </p>
+
+        <h3>
+            Washed Black Jeans
+        </h3>
+
+        <strong>
+            Rp429.000
+        </strong>
+
+
+        <button
+        onclick="addCart('Washed Black Jeans',429000)">
+
+            TAMBAH KE KERANJANG
+
+        </button>
+
+    </div>
+
+</div>
+
+
+
+<!-- 17 -->
+
+<div class="product-card"
+     data-category="jeans">
+
+    <div class="product-image">
+
+        <img
+        src="https://images.pexels.com/photos/1346187/pexels-photo-1346187.jpeg?auto=compress&cs=tinysrgb&w=800">
+
+    </div>
+
+
+    <div class="product-info">
+
+        <p>
+            JEANS
+        </p>
+
+        <h3>
+            Relaxed Fit Jeans
+        </h3>
+
+        <strong>
+            Rp449.000
+        </strong>
+
+
+        <button
+        onclick="addCart('Relaxed Fit Jeans',449000)">
+
+            TAMBAH KE KERANJANG
+
+        </button>
+
+    </div>
+
+</div>
+
+
+
+<!-- ================================================= -->
+<!-- 18 SEPATU -->
+<!-- ================================================= -->
+
+<div class="product-card"
+     data-category="shoes">
+
+    <div class="product-image">
+
+        <span class="sale">
+            NEW
+        </span>
+
+        <img
+        src="images 12-22-29-684/0800b12021356b0369367048ae2e0f71.jpg_400x400q80.jpg_.webp" alt="urban black sneakers">
+    </div>
+
+
+    <div class="product-info">
+
+        <p>
+            SHOES
+        </p>
+
+        <h3>
+            Urban Black Sneakers
+        </h3>
+
+        <strong>
+            Rp599.000
+        </strong>
+
+
+        <button
+        onclick="addCart('Urban Black Sneakers',599000)">
+
+            TAMBAH KE KERANJANG
+
+        </button>
+
+    </div>
+
+</div>
+
+
+
+<!-- 19 -->
+
+<div class="product-card"
+     data-category="shoes">
+
+    <div class="product-image">
+
+        <img
+        src="images 12-22-29-684/shopping-2.jpeg" alt="Brown White Sneakers">
+
+    </div>
+
+
+    <div class="product-info">
+
+        <p>
+            SHOES
+        </p>
+
+        <h3>
+            Brown White Sneakers
+        </h3>
+
+        <strong>
+            Rp649.000
+        </strong>
+
+
+        <button
+        onclick="addCart('Brown White Sneakers',649000)">
+
+            TAMBAH KE KERANJANG
+
+        </button>
+
+    </div>
+
+</div>
+
+
+
+<!-- 20 -->
+
+<div class="product-card"
+     data-category="shoes">
+
+    <div class="product-image">
+
+        <img
+        src="https://images.pexels.com/photos/13536939/pexels-photo-13536939.jpeg?auto=compress&cs=tinysrgb&w=800">
+
+    </div>
+
+
+    <div class="product-info">
+
+        <p>
+            SHOES
+        </p>
+
+        <h3>
+            Premium White Sneakers
+        </h3>
+
+        <strong>
+            Rp699.000
+        </strong>
+
+
+        <button
+        onclick="addCart('Premium White Sneakers',699000)">
+
+            TAMBAH KE KERANJANG
+
+        </button>
+
+    </div>
+
+</div>
+
+
+
+    </div>
+
+</section>
+
+
+
+<!-- ================= PROMO ================= -->
+
+<section class="promo">
+
+    <div>
+
+        <p>
+            LIMITED COLLECTION
+        </p>
+
+
+        <h2>
+
+            STREET STYLE
+            <br>
+
+            NEVER DIES.
+
+        </h2>
+
+
+        <a href="#produk">
+
+            EXPLORE COLLECTION →
+
+        </a>
+
+    </div>
+
+</section>
+
+
+
+<!-- ================= ABOUT ================= -->
+
+<section id="tentang"
+         class="about">
+
+    <div>
+
+        <p>
+            OUR STORY
+        </p>
+
+
+        <h2>
+
+            WEAR YOUR
+            <br>
+
+            ATTITUDE.
+
+        </h2>
+
+    </div>
+
+
+    <p>
+
+        URBAN STREET77 adalah brand
+        fashion yang menggabungkan
+        gaya streetwear, casual dan
+        motorcycle lifestyle.
+
+        <br><br>
+
+        Dibuat untuk kamu yang ingin
+        tampil percaya diri dan berbeda.
+
+    </p>
+
+</section>
+
+
+
+<!-- ================= FOOTER ================= -->
+
+<footer id="kontak">
+
+    <div class="footer-logo">
+
+        URBAN<span>STREET77</span>
+
+    </div>
+
+
+    <p>
+        Streetwear • Lifestyle • Culture
+    </p>
+
+
+    <div class="social">
+
+        <a href="https://www.instagram.com/urbanstreet/" target="_blank">
+            Instagram @urbanstreet
+        </a>
+
+        <a href="https://www.tiktok.com/@urbanstreet" target="_blank">
+            TikTok
+        </a>
+
+        <a href="https://wa.me/6283890508425" target="_blank">
+            WhatsApp
+        </a>
+
+    </div>
+
+
+    <p class="copyright">
+
+        © 2026 Urban Streetwear
+
+    </p>
+
+</footer>
+
+
+
+<!-- ================= CART ================= -->
+
+<div class="cart-modal"
+     id="cart-modal">
+
+    <div class="cart-box">
+
+
+        <button class="close"
+                onclick="closeCart()">
+
+            ×
+
+        </button>
+
+
+        <h2>
+            KERANJANG BELANJA
+        </h2>
+
+
+        <div id="cart-items"></div>
+
+
+        <div class="cart-total">
+
+            Total:
+
+            <strong id="cart-total">
+                Rp159.000.000
+            </strong>
+
+        </div>
+
+
+        <button class="checkout"
+                onclick="checkoutWhatsApp()">
+
+            PESAN VIA WHATSAPP
+
+        </button>
+
+    </div>
+
+</div>
+
+
+
+<script src="script.js"></script>
+
+
+</body>
+
+</html>
